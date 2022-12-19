@@ -1,0 +1,49 @@
+// Import modules
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap");
+@import "./header/header";
+@import "./sidebar/sidebar";
+@import "./animations/animations";
+@import "./listCoupons/listCoupons";
+@import "./descriptionCoupons/descriptionCoupons";
+@import "./StatisticsCoupon/StatisticsCoupon";
+@import "./detailedStatistics/detailedStatistics";
+
+*,
+html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.tooltip_ {
+  position: relative;
+
+  div {
+    position: absolute;
+    font-size: 11px;
+    color: $gris;
+    z-index: 200;
+    background: $blanco;
+    border-radius: 5px;
+    border: 1px solid $icono-claros;
+    padding: 5px;
+    margin-left: 120px;
+    display: none;
+    animation: fadeIn 0.2s linear;
+  }
+}
+
+a.tooltip_:hover {
+  div {
+    display: block;
+  }
+}

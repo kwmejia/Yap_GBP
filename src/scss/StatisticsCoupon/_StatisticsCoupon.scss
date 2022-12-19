@@ -1,0 +1,148 @@
+@import "../base/variables";
+
+main .statistics_container {
+  #statistics {
+    box-shadow: 1px 0px 2px #00000029;
+    overflow: auto;
+    height: 78vh;
+    padding: 20px;
+
+    .statistics_global {
+      background: $blanco 0% 0% no-repeat padding-box;
+      background: #ffffff 0% 0% no-repeat padding-box;
+      box-shadow: 0px 0px 6px #00000029;
+      border-radius: 8px;
+      padding: 15px;
+      display: flex;
+      text-align: center;
+      justify-content: center;
+
+      .title_estadistica {
+        font: $unnamed-font-style-normal normal 300 16px/25px
+          $unnamed-font-family-poppins;
+        letter-spacing: $unnamed-character-spacing-0;
+        color: $gris;
+        text-align: left;
+        font: normal normal 300 16px/25px Poppins;
+        letter-spacing: 0px;
+        color: #344563;
+        padding-right: 10px;
+      }
+
+      .valor_estadistica {
+        font: $unnamed-font-style-normal normal medium 22px/33px
+          $unnamed-font-family-poppins;
+        letter-spacing: $unnamed-character-spacing-0;
+        color: $verde-exito;
+        text-align: left;
+        font: normal normal medium 22px/33px Poppins;
+        letter-spacing: 0px;
+        color: #29d884;
+        font-weight: 600;
+        padding-right: 10px;
+      }
+
+      .cupones_apli,
+      .ventas {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 50%;
+        position: relative;
+      }
+
+      .cupones_apli::before {
+        position: absolute;
+        content: "";
+        width: 1px;
+        height: 50px;
+        background: #00000010;
+        right: 10px;
+        top: 0;
+      }
+    }
+
+    .show_more_btn {
+      background: var(--blanco) 0% 0% no-repeat padding-box;
+      border: 1px solid var(--gris-claro);
+      background: #ffffff 0% 0% no-repeat padding-box;
+      border: 1px solid #dfe4e8;
+      border-radius: 8px;
+      width: 200px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      text-align: center;
+      margin: 10px 0;
+      padding: 4px;
+      color: $gris;
+      font-weight: 300;
+      font-size: 14px;
+    }
+
+    .planes {
+      i {
+        color: #6c757d;
+        margin-right: 5px;
+      }
+
+      h3 {
+        font-size: 16px;
+        color: $gris;
+        font-weight: 600;
+      }
+    }
+  }
+
+  #statistics::-webkit-scrollbar {
+    width: 0;
+  }
+
+  #cards {
+    width: 100%;
+    margin-top: 10px;
+    .card_ {
+      background: $blanco 0% 0% no-repeat padding-box;
+      background: #ffffff 0% 0% no-repeat padding-box;
+      box-shadow: 0px 0px 6px #00000029;
+      border-radius: 8px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      margin-top: 10px;
+
+      .value {
+        font: $unnamed-font-style-normal normal medium 16px/25px
+          $unnamed-font-family-poppins;
+        color: $azul;
+        color: #0052cc;
+        font-weight: 500;
+      }
+
+      .title_card {
+        font: $unnamed-font-style-normal normal medium 16px/25px
+          $unnamed-font-family-poppins;
+        color: $gris;
+        font-weight: 300;
+        font-size: 14px;
+      }
+
+      .cont_img {
+        background: $azul-claro 0% 0% no-repeat padding-box;
+        background: #e1edff 0% 0% no-repeat padding-box;
+        border-radius: 8px;
+        width: 35px;
+        height: 35px;
+        padding: 5px;
+        display: flex;
+        justify-content: center;
+
+        i {
+          color: $azul;
+          font-size: 18px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,146 @@
+@import "../base/variables";
+
+main {
+  overflow: hidden;
+  .list_container {
+    box-shadow: 1px 0px 2px #00000029;
+    overflow: auto;
+    height: 90vh !important;
+
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+  }
+
+  .header_section {
+    width: 100%;
+    height: 61px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 15px;
+    align-items: center;
+    box-shadow: 0px 1px 0.5px #00000029;
+    margin-top: 20px;
+
+    a {
+      height: 24px;
+      width: 24px;
+      margin-right: 10px;
+      border-radius: 50%;
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.3s;
+      padding: 15px;
+
+      i {
+        color: $gris;
+      }
+    }
+
+    a:hover {
+      background: $azul-claro;
+    }
+
+    a.active {
+      background: #ffe9ce;
+      color: #ff991f;
+    }
+
+    .description {
+      h3 {
+        font-size: 16px;
+        color: $gris;
+        font-weight: 500;
+      }
+
+      p {
+        font-size: 12px;
+        color: #97a0b0;
+        font-weight: 300;
+        letter-spacing: 0.4px;
+      }
+    }
+  }
+
+  .search_cont {
+    .cont_input {
+      position: relative;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+
+      input {
+        color: $gris;
+        border-radius: 5px;
+        border: 1px solid #dee1e4;
+        background: #fafbfc;
+        font-size: 14px;
+        margin-top: 15px;
+        outline: none;
+        transition: 0.5s;
+        padding: 7px 7px;
+        height: 36px;
+        width: 80%;
+        padding: 0 10px;
+      }
+
+      input:focus {
+        border: 1px solid #ffb91d;
+      }
+
+      i {
+        position: absolute;
+        margin-right: 10px;
+        margin-top: 15px;
+      }
+    }
+  }
+
+  .list_coupons {
+    .coupon {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px;
+      box-shadow: 0px 0px 2px #00000029;
+      cursor: pointer;
+      position: relative;
+      transition: 0.5s;
+    }
+
+    .coupon:hover,
+    .coupon.active {
+      background: $azul-claro;
+    }
+
+    .coupon:hover:before {
+      content: "";
+      position: absolute;
+      left: 0;
+      width: 4px;
+      height: 40px;
+      background: $azul 0% 0% no-repeat padding-box;
+      background: #0052cc 0% 0% no-repeat padding-box;
+      border-radius: 0px 2px 2px 0px;
+      animation: hoverCoupon 0.3s linear;
+    }
+
+    h4 {
+      font-size: 12px;
+      color: $gris;
+    }
+
+    span {
+      font-size: 11px;
+      margin-right: 3px;
+      font-weight: 500;
+      color: $gris;
+    }
+
+    i {
+      color: $gris;
+    }
+  }
+}

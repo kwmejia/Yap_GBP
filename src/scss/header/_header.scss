@@ -1,0 +1,115 @@
+@import "../base/variables";
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 34px;
+  box-shadow: 0px 1px 3px #00000029;
+  width: 100%;
+  flex-wrap: wrap;
+  background: $blanco;
+  position: fixed;
+
+  .logo {
+    width: 62px;
+    margin-right: 10px;
+  }
+
+  h1 {
+    color: $gris;
+    text-align: left;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 0px;
+    color: #344563;
+    margin-left: 10px;
+    margin: auto 0;
+    font-weight: 500;
+  }
+
+  nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .support_btn {
+      align-items: center;
+      border-radius: 21px;
+      border: 1px solid $azul-claro;
+      display: flex;
+      height: 40px;
+      justify-content: center;
+      padding: 10px;
+      transition: 0.5s;
+      width: 40px;
+      margin-right: 10px;
+
+      i {
+        font-size: 16px;
+        color: $azul-claro;
+        transition: 0.5s;
+      }
+    }
+
+    .support_btn:hover {
+      background: $azul-claro;
+
+      i {
+        color: #344563;
+      }
+    }
+
+    .btn_ {
+      font-size: 14px;
+      color: $gris;
+      padding: 8px;
+      margin: 0 8px;
+      transition: 0.5s;
+      border-radius: 21px;
+      border: 1px solid transparent;
+    }
+
+    .restaurants_btn:hover {
+      background: $azul-claro;
+    }
+
+    .trade_btn:hover {
+      background: #ff991f66 0% 0% no-repeat padding-box;
+      border: 1px solid #ff991f99;
+      transition: 0.5s;
+    }
+
+    .user_btn {
+      width: 32px;
+      height: 32px;
+      background: $ff991f;
+      border-radius: 50%;
+      border: none;
+      position: relative;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 20px;
+
+      i {
+        color: $blanco;
+      }
+
+      button {
+        position: absolute;
+        bottom: -60px;
+        right: 0px;
+        width: 150px;
+        background: $azul-claro;
+        transition: 0.5s;
+        animation: fadeIn 0.3s linear;
+        &:hover {
+          color: $azul;
+        }
+      }
+    }
+  }
+}

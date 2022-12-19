@@ -1,0 +1,13 @@
+@import "../base/variables";
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+}
+
+@keyframes hoverCoupon {
+  0% {
+    height: 0;
+  }
+}

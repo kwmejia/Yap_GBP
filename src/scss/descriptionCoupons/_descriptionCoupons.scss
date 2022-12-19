@@ -1,0 +1,41 @@
+@import "../base/variables";
+
+main .description_container {
+  #description {
+    box-shadow: 1px 0px 2px #00000029;
+    overflow: auto;
+    height: 78vh;
+    padding: 2px 20px;
+    &::-webkit-scrollbar {
+      width: 0;
+    }
+
+    .section_title {
+      font-size: 15px;
+      color: $gris;
+      text-align: left;
+      font-weight: 600;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .title {
+      font-size: 14px;
+      color: $gris;
+      text-align: left;
+      font-weight: 500;
+      display: flex;
+      margin-bottom: 0;
+    }
+    .title p {
+      margin-left: 5px;
+    }
+
+    p {
+      color: $gris;
+      font-size: 15px;
+      font-weight: 300;
+      text-align: justify;
+    }
+  }
+}
